@@ -33,7 +33,8 @@ image {
   height: auto;
 }
 .container {
-  width: 1158px;
+  width: 100%;
+  max-width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;
@@ -117,7 +118,7 @@ body {
   height: 4px;
   left: 0px;
   top: 43px;
-  background: #404bbf;
+  background: var(--action-color);
   border-radius: 2px;
   content: "";
 }
@@ -257,6 +258,7 @@ body {
   margin: 0 auto;
 }
 .services {
+  display:none;
   padding-top: 120px;
   padding-bottom: 120px;
 }
@@ -286,8 +288,11 @@ body {
 
 .team {
   background-color: var(--secondary-bg-color);
-  padding-bottom: 120px;
-  padding-top: 120px;
+  padding-bottom: 96px;
+  padding-top: 128px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
 }
 
 .team-title {
@@ -303,20 +308,25 @@ body {
 
 .team-list {
   display: flex;
+  flex-wrap: wrap;
+  gap: 72px;
 }
 
 .team-item {
+  box-sizing: content-box;
   background-color: var(--primary-bg-color);
-  width: 264px;
+  width: 100%;
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
   border-radius: 0px 0px 4px 4px;
-  margin-right: 24px;
+  
 }
 .team-item:last-child {
   margin-right: 0px;
 }
 .team-image {
+  width: 100%;
+  height: auto  ;
 }
 
 .team-information {
@@ -350,6 +360,7 @@ body {
   display: flex;
   justify-content: center;
   gap: 24px;
+  
 }
 .icon-mini-box {
 }
@@ -359,7 +370,7 @@ body {
   align-items: center;
   width: 40px;
   height: 40px;
-  background-color: #404bbf;
+  background-color: var(--action-color);
   border-radius: 50%;
   transition-property: background-color;
   transition-duration: 250ms;
@@ -501,7 +512,7 @@ body {
 }
 
 .footer-button:hover {
-  background-color: #404bbf;
+  background-color: var(--action-color);
 }
 
 /* position: relative; */
@@ -531,8 +542,8 @@ body {
 
 /* customers */
 .customer-sec {
-  padding-top: 130px;
-  padding-bottom: 120px;
+  padding-top: 96px;
+  padding-bottom: 96px;
 }
 
 .customer-title {
@@ -547,10 +558,14 @@ body {
 }
 
 .customer-list {
+  flex-wrap: wrap;
   display: flex;
-  gap: 24px;
+  gap: 16px;
+  row-gap: 72px;
 }
-
+.contacts-list-item{
+  width: 100%
+}
 .customer-icon {
   fill: #afb1b8;
 }
@@ -559,10 +574,11 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 168px;
+  width: 100%;
   height: 88px;
   border: 1px solid #8e8f99;
   border-radius: 4px;
+ 
 
   transition-property: border-color;
   transition-duration: 250ms;
@@ -575,10 +591,10 @@ body {
 
 .customer-box:is(:hover, :focus) {
   outline: none;
-  border-color: #404bbf;
+  border-color: var(--action-color);
 }
 .customer-box:is(:hover, :focus) .customer-icon {
-  fill: #404bbf;
+  fill: var(--action-color);
 }
 
 /* modal */
@@ -756,11 +772,11 @@ body {
 }
 
 .input-check:checked + .modal-checkbox-text::before {
-  background-color: #404bbf;
+  background-color: var(--action-color);
   background-image: url(../images/tick.svg);
   background-repeat: no-repeat;
   background-position: center;
-  border-color: #404bbf;
+  border-color: var(--action-color);
 }
 .modal-checkbox-link {
   color: #4d5ae5;
@@ -786,7 +802,7 @@ body {
 }
 
 .modal-submit-button:hover {
-  background-color: #404bbf;
+  background-color: var(--action-color);
 }
 
 .send-text {
@@ -858,7 +874,7 @@ body {
 }
 .projects-button:hover,
 .projects-button:focus {
-  background-color: #404bbf;
+  background-color: var(--action-color);
   color: #ffffff;
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
@@ -953,3 +969,133 @@ body {
   border-right: 1px solid #e7e9fc;
   border-bottom: 1px solid #e7e9fc;
 }
+
+/* customers */
+
+.container{
+  max-width: 426px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+}
+.contacts-list-item{
+  width: calc((100% - 30px) / 2);
+}
+
+@media screen and (min-width:480px) {
+  .team-container{
+    max-width: 290px;
+    padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+  }
+  
+}
+
+@media screen and (min-width:764px)
+{
+  .team-container{
+    max-width: 582px;
+    padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+  
+
+}
+
+.team-item{
+   width: calc((100% - 30px) / 2);
+   
+}
+.team-list{
+  gap: 24px;
+
+}
+
+.team {
+  background-color: var(--secondary-bg-color);
+  padding-bottom: 104px;
+  padding-top: 96px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+}
+/* customers */
+.container{
+     max-width: 582px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+}
+
+.contacts-list-item{
+  width: calc((100% - 30px) / 3);
+}
+
+.customer-list {
+  flex-wrap: wrap;
+  display: flex;
+  gap: 24px;
+  row-gap: 72px;
+
+}
+
+.customer-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 168px;
+  height: 88px;
+  border: 1px solid #8e8f99;
+  border-radius: 4px;
+ 
+
+  transition-property: border-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+}
+
+
+
+
+
+
+@media screen and (min-width:1200px)
+{
+  .team-container{
+    width: 100%;
+  max-width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+  }
+.team-item{
+   width: calc((100% - 30px) / 4);
+   
+}
+
+.team-list {
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 24px;
+}
+
+.team {
+  background-color: var(--secondary-bg-color);
+  padding-bottom: 120px;
+  padding-top: 120px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+}
+}
+
+
+  
+
+
