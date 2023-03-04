@@ -7,6 +7,70 @@
     background-image: url(../images/people-office-desktop2x.jpg);
   }
 }
+
+.header-list {
+  display: flex;
+  gap: 40px;
+}
+
+.header-link {
+  position: relative;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--primary-text-color);
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.current::after {
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 4px;
+  left: 0px;
+  top: 43px;
+  background: var(--action-color);
+  border-radius: 2px;
+  content: "";
+}
+
+.header-link.current {
+  color: var(--action-color);
+}
+
+.header-link:hover,
+.header-link:focus {
+  color: var(--action-color);
+}
+
+.contacts-list {
+  display: flex;
+}
+
+.header-email {
+  font-style: normal;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #434455;
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.header-email:hover,
+.header-email:focus {
+  color: var(--action-color);
+}
+
+.menu-open{
+  display: none;
+}
+
+
+/* hero */
     .hero-container{
       width: 100%;
       max-width: 1158px;

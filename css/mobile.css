@@ -1,8 +1,16 @@
 @media screen and (min-width: 480px) {
 
+
+  .mob-tel {
+
+  font-weight: 700;
+font-size: 36px;
+line-height: 1.11;
+color: #4D5AE5;
+
+}
     .header-container{
-        width: 100%;
-    max-width: 426px;
+     width: 100%;
     padding-left: 15px;
     padding-right: 15px;
     margin: 0 auto;

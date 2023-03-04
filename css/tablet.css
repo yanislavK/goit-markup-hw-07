@@ -74,6 +74,10 @@
   color: #434455;
   margin-left: 40px;
 }
+
+.menu-open{
+  display: none;
+}
 /* hero */
 .hero{
   padding-bottom: 108px;
