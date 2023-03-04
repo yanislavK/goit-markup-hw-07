@@ -1,0 +1,43 @@
+@media screen and (min-width: 480px) {
+
+    .header-container{
+        width: 100%;
+    max-width: 426px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 0 auto;
+
+    }
+  .hero-container{
+    width: 100%;
+    max-width: 350px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 0 auto;
+
+  }
+  .advantage-container {
+    width: 100%;
+    max-width: 426px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 0 auto;
+  }
+  .team-container {
+    max-width: 290px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 0 auto;
+  }
+  /* customers */
+
+  .container {
+    max-width: 426px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 0 auto;
+  }
+  .contacts-list-item {
+    width: calc((100% - 30px) / 2);
+  }
+}
