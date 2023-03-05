@@ -8,6 +8,14 @@
   }
 }
 
+.header-container{
+     width: 100%;
+      max-width: 1158px;
+      padding-left: 15px;
+      padding-right: 15px;
+      margin: 0 auto;
+
+  }
 .header-list {
   display: flex;
   gap: 40px;
@@ -49,7 +57,9 @@
 .contacts-list {
   display: flex;
 }
-
+.header-tel{
+  margin-left: 40px;
+}
 .header-email {
   font-style: normal;
   font-size: 16px;
@@ -190,5 +200,12 @@
 
     .footer-subscribe {
       margin-left: auto;
+    }
+
+    .logo-socials-cont{
+      display: flex;
+    }
+    .mob-menu{
+      display: none;
     }
   }

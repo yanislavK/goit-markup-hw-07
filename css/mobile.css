@@ -1,28 +1,22 @@
 @media screen and (min-width: 480px) {
-
-
   .mob-tel {
-
-  font-weight: 700;
-font-size: 36px;
-line-height: 1.11;
-color: #4D5AE5;
-
-}
-    .header-container{
-     width: 100%;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.11;
+    color: #4d5ae5;
+  }
+  .header-container {
+    width: 100%;
     padding-left: 15px;
     padding-right: 15px;
     margin: 0 auto;
-
-    }
-  .hero-container{
+  }
+  .hero-container {
     width: 100%;
     max-width: 350px;
     padding-left: 15px;
     padding-right: 15px;
     margin: 0 auto;
-
   }
   .advantage-container {
     width: 100%;
@@ -37,6 +31,7 @@ color: #4D5AE5;
     padding-right: 15px;
     margin: 0 auto;
   }
+
   /* customers */
 
   .container {
@@ -47,5 +42,8 @@ color: #4D5AE5;
   }
   .contacts-list-item {
     width: calc((100% - 30px) / 2);
+  }
+  .modal {
+    max-height: 586px;
   }
 }
