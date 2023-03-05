@@ -188,12 +188,12 @@
     margin: 0 auto;
   }
 
-  .projects {
+  /* .projects {
     max-width: 582px;
     padding-left: 15px;
     padding-right: 15px;
     margin: 0 auto;
-  }
+  } */
   .contacts-list-item {
     width: calc((100% - 30px) / 3);
   }
@@ -293,4 +293,17 @@
   .mob-menu {
     display: none;
   }
+  .projects-container{
+    max-width: 766px;
+    width: 100%;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 0 auto;
+
+  }
+  .jobs-item{
+    width: calc((100% - 30px) / 2);
+  }
+
+
 }

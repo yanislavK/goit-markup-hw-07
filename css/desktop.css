@@ -1,211 +1,228 @@
 @media screen and (min-width: 1200px) {
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .hero {
+      background-image: url(../images/people-office-desktop2x.jpg);
+    }
+  }
 
-      @media (min-device-pixel-ratio: 2),
-  (min-resolution: 192dpi),
-  (min-resolution: 2dppx) {
+  .header-container {
+    width: 100%;
+    max-width: 1158px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 0 auto;
+  }
+  .header-list {
+    display: flex;
+    gap: 40px;
+  }
+
+  .header-link {
+    position: relative;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: var(--primary-text-color);
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .current::after {
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 4px;
+    left: 0px;
+    top: 43px;
+    background: var(--action-color);
+    border-radius: 2px;
+    content: "";
+  }
+
+  .header-link.current {
+    color: var(--action-color);
+  }
+
+  .header-link:hover,
+  .header-link:focus {
+    color: var(--action-color);
+  }
+
+  .contacts-list {
+    display: flex;
+  }
+  .header-tel {
+    margin-left: 40px;
+  }
+  .header-email {
+    font-style: normal;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: #434455;
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .header-email:hover,
+  .header-email:focus {
+    color: var(--action-color);
+  }
+
+  .menu-open {
+    display: none;
+  }
+
+  /* hero */
+  .hero-container {
+    width: 100%;
+    max-width: 1158px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 0 auto;
+  }
   .hero {
-    background-image: url(../images/people-office-desktop2x.jpg);
+    padding-top: 188px;
+    padding-bottom: 188px;
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/hero-bg.jpg);
+  }
+  .services {
+    display: flex;
+    padding-top: 0px;
+    padding-bottom: 120px;
+  }
+  /* advantage */
+
+  .advantage {
+    padding-top: 120px;
+    padding-bottom: 120px;
+  }
+  .advantage-container {
+    width: 100%;
+    max-width: 1158px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 0 auto;
+  }
+  .advantage-list {
+    gap: 24px;
+    display: flex;
+    flex-wrap: nowrap;
+  }
+  .advantage-item:not(:nth-child(3)):not(:nth-child(4)) {
+    padding-bottom: 0px;
+  }
+  .advantage-item {
+    max-width: 264px;
+    width: calc((100% - 30px) / 4);
+  }
+
+  .advantage-icon-sec {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 264px;
+    width: 100%;
+    height: 112px;
+    background-color: #f4f4fd;
+    margin-bottom: 8px;
+  }
+  .advantage-item-title {
+    text-align: start;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+
+    letter-spacing: 0.02em;
+
+    color: #2e2f42;
+  }
+  .team-container {
+    width: 100%;
+    max-width: 1158px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 0 auto;
+  }
+  .team-item {
+    width: calc((100% - 30px) / 4);
+  }
+
+  .team-list {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 24px;
+  }
+
+  .team {
+    background-color: var(--secondary-bg-color);
+    padding-bottom: 120px;
+    padding-top: 120px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 0 auto;
+  }
+
+  /* customers */
+
+  .container {
+    width: 100%;
+    max-width: 1158px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 0 auto;
+  }
+
+  .contacts-list-item {
+    width: calc((100% - 30px) / 6);
+  }
+
+  .customer-list {
+    flex-wrap: wrap;
+    display: flex;
+    gap: 24px;
+  }
+  .footer-links {
+    margin-left: 120px;
+  }
+
+  .footer-subscribe {
+    margin-left: auto;
+  }
+
+  .logo-socials-cont {
+    display: flex;
+  }
+  .mob-menu {
+    display: none;
+  }
+  .projects-container {
+    width: 100%;
+    max-width: 1158px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 0 auto;
+  }
+  .jobs-item {
+    width: 360px;
+  }
+  .jobs-list {
+    display: flex;
+    margin: 0 auto;
+    gap: 24px;
+  }
+  .projects-list {
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 72px;
   }
 }
-
-.header-container{
-     width: 100%;
-      max-width: 1158px;
-      padding-left: 15px;
-      padding-right: 15px;
-      margin: 0 auto;
-
-  }
-.header-list {
-  display: flex;
-  gap: 40px;
-}
-
-.header-link {
-  position: relative;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.5;
-  letter-spacing: 0.02em;
-  color: var(--primary-text-color);
-  transition-property: color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.current::after {
-  display: block;
-  position: absolute;
-  width: 100%;
-  height: 4px;
-  left: 0px;
-  top: 43px;
-  background: var(--action-color);
-  border-radius: 2px;
-  content: "";
-}
-
-.header-link.current {
-  color: var(--action-color);
-}
-
-.header-link:hover,
-.header-link:focus {
-  color: var(--action-color);
-}
-
-.contacts-list {
-  display: flex;
-}
-.header-tel{
-  margin-left: 40px;
-}
-.header-email {
-  font-style: normal;
-  font-size: 16px;
-  line-height: 1.5;
-  letter-spacing: 0.02em;
-  color: #434455;
-  transition-property: color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-.header-email:hover,
-.header-email:focus {
-  color: var(--action-color);
-}
-
-.menu-open{
-  display: none;
-}
-
-
-/* hero */
-    .hero-container{
-      width: 100%;
-      max-width: 1158px;
-      padding-left: 15px;
-      padding-right: 15px;
-      margin: 0 auto;
-
-    }
-    .hero{
-      padding-top: 188px;
-  padding-bottom: 188px;
-  background-image: linear-gradient(
-      rgba(46, 47, 66, 0.7),
-      rgba(46, 47, 66, 0.7)
-    ),
-    url(../images/hero-bg.jpg);
-}
-    .services {
-      display: flex;
-      padding-top: 0px;
-      padding-bottom: 120px;
-    }
-    /* advantage */
-
-    .advantage {
-      padding-top: 120px;
-      padding-bottom: 120px;
-    }
-    .advantage-container {
-      width: 100%;
-      max-width: 1158px;
-      padding-left: 15px;
-      padding-right: 15px;
-      margin: 0 auto;
-    }
-    .advantage-list {
-      gap: 24px;
-      display: flex;
-      flex-wrap: nowrap;
-    }
-    .advantage-item:not(:nth-child(3)):not(:nth-child(4)) {
-      padding-bottom: 0px;
-    }
-    .advantage-item {
-      max-width: 264px;
-      width: calc((100% - 30px) / 4);
-    }
-
-    .advantage-icon-sec {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      max-width: 264px;
-      width: 100%;
-      height: 112px;
-      background-color: #f4f4fd;
-      margin-bottom: 8px;
-    }
-    .advantage-item-title {
-      text-align: start;
-      font-weight: 500;
-      font-size: 20px;
-      line-height: 1.2;
-
-      letter-spacing: 0.02em;
-
-      color: #2e2f42;
-    }
-    .team-container {
-      width: 100%;
-      max-width: 1158px;
-      padding-left: 15px;
-      padding-right: 15px;
-      margin: 0 auto;
-    }
-    .team-item {
-      width: calc((100% - 30px) / 4);
-    }
-
-    .team-list {
-      display: flex;
-      flex-wrap: nowrap;
-      gap: 24px;
-    }
-
-    .team {
-      background-color: var(--secondary-bg-color);
-      padding-bottom: 120px;
-      padding-top: 120px;
-      padding-left: 15px;
-      padding-right: 15px;
-      margin: 0 auto;
-    }
-
-    /* customers */
-
-    .container {
-      width: 100%;
-      max-width: 1158px;
-      padding-left: 15px;
-      padding-right: 15px;
-      margin: 0 auto;
-    }
-
-    .contacts-list-item {
-      width: calc((100% - 30px) / 6);
-    }
-
-    .customer-list {
-      flex-wrap: wrap;
-      display: flex;
-      gap: 24px;
-    }
-    .footer-links {
-      margin-left: 120px;
-    }
-
-    .footer-subscribe {
-      margin-left: auto;
-    }
-
-    .logo-socials-cont{
-      display: flex;
-    }
-    .mob-menu{
-      display: none;
-    }
-  }
