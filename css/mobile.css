@@ -31,7 +31,9 @@
     padding-right: 15px;
     margin: 0 auto;
   }
-
+.mob-menu-link.current{
+  color: var(--action-color);
+}
   /* customers */
 
   .container {
