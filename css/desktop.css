@@ -225,4 +225,9 @@
     justify-content: center;
     margin-bottom: 72px;
   }
+  .projects {
+  background-color: var(--primary-bg-color);
+  padding-top: 96px;
+  padding-bottom: 120px;
+}
 }

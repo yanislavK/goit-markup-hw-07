@@ -188,12 +188,7 @@
     margin: 0 auto;
   }
 
-  /* .projects {
-    max-width: 582px;
-    padding-left: 15px;
-    padding-right: 15px;
-    margin: 0 auto;
-  } */
+
   .contacts-list-item {
     width: calc((100% - 30px) / 3);
   }
@@ -300,6 +295,13 @@
     padding-right: 15px;
     margin: 0 auto;
 
+  }
+  .projects-list {
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 72px;
+    gap: 24px;
   }
   .jobs-item{
     width: calc((100% - 30px) / 2);

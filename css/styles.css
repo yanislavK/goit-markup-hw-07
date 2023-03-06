@@ -904,10 +904,14 @@ body {
 
 .projects {
   background-color: var(--primary-bg-color);
-  padding-top: 96px;
-  padding-bottom: 120px;
+  padding-top: 48px;
+  padding-bottom: 48px;
 }
-
+.projects-container{
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+}
 .projects-title {
   display: none;
 }
