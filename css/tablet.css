@@ -3,7 +3,7 @@
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
     .hero {
-      background-image: url(../images/Darkbgtablet2x.jpg)
+      background-image: url(../images/people-office2xtabl.jpg)
     }
   }
   /* header */
@@ -100,7 +100,7 @@
         rgba(46, 47, 66, 0.7),
         rgba(46, 47, 66, 0.7)
       ),
-      url(../images/Dark-bg\ -tablet2x\ \(1\).jpg;)
+      url(../images/people-office2xtabl.jpg)
   }
 
   .hero-container {
