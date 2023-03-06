@@ -92,11 +92,25 @@ body {
   text-transform: uppercase;
   color: #4d5ae5;
 }
+/* .current::after {
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 4px;
+    left: 0px;
+    top: 43px;
+    background: var(--action-color);
+    border-radius: 2px;
+    content: "";
+  } */
 
- .mob-menu-link.current {
+  .header-link.current {
     color: var(--action-color);
   }
 
+ 
+
+   
 .header-list {
   display: none;
   gap: 40px;
