@@ -31,9 +31,9 @@
     padding-right: 15px;
     margin: 0 auto;
   }
-.mob-menu-link.current{
-  color: var(--action-color);
-}
+  .mob-menu-link.current {
+    color: var(--action-color);
+  }
   /* customers */
 
   .container {
@@ -45,16 +45,12 @@
   .contacts-list-item {
     width: calc((100% - 30px) / 2);
   }
-  .modal {
-    max-height: 586px;
-  }
 
-  .projects-container{
+  .projects-container {
     width: 100%;
     max-width: 426px;
     padding-left: 15px;
     padding-right: 15px;
     margin: 0 auto;
-
   }
 }

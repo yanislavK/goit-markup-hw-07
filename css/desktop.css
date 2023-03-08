@@ -125,6 +125,10 @@
     width: calc((100% - 30px) / 4);
   }
 
+  .advantage-item:not(:last-child) {
+    margin-bottom: 0px;
+  }
+
   .advantage-icon-sec {
     display: flex;
     justify-content: center;
@@ -198,6 +202,13 @@
     margin-left: auto;
   }
 
+  .footer {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+  .footer-flex {
+    flex-direction: row;
+  }
   .logo-socials-cont {
     display: flex;
   }
@@ -226,8 +237,8 @@
     margin-bottom: 72px;
   }
   .projects {
-  background-color: var(--primary-bg-color);
-  padding-top: 96px;
-  padding-bottom: 120px;
-}
+    background-color: var(--primary-bg-color);
+    padding-top: 96px;
+    padding-bottom: 120px;
+  }
 }
